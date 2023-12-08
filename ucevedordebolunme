@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class ucevedordebolunme {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int girilensayi= scanner.nextInt();
+        int counter=0;
+        int kactane12=0;
+        int ortalama = 0;
+        for (int i=1;i<=girilensayi;i++){
+            if (i%3==0&&i%4==0){
+                counter=counter+i;
+                kactane12=kactane12+1;
+                ortalama=counter/kactane12;
+            }
+        }
+        System.out.println(" ortalama: "+ortalama);
+    }
+}
